@@ -1,0 +1,42 @@
+/* Header */
+
+.header{
+    padding-top: 20px;
+}
+
+.navbar-toggler span.menu1 {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: var(--vermelho) !important;
+    border-radius: 50%;
+    display: block;
+    transition: all .7s ease-out;
+}
+
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    list-style: none;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.navbar-nav{
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-nav a{
+    color: var(--branco);
+}
+
+.nav-link:hover{
+    color: var(--vermelho);
+}
+
