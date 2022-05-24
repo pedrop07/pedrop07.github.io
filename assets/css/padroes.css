@@ -1,10 +1,15 @@
 /* Global */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
 html,body {
 	background-color: #070707;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+    scroll-behavior: smooth;
+
 }
 
 hr{
@@ -240,8 +245,9 @@ img {
         font-size: 24px;
     }
 
-
-
+    .fs-24{
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 991px){
@@ -254,9 +260,9 @@ img {
         font-size: 22px;
     }
 
-
-
-
+    .fs-24{
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 767px){
@@ -273,7 +279,9 @@ img {
         font-size: 3em;
     }
 
-
+    .fs-24{
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 540px){
@@ -289,7 +297,6 @@ img {
     .infos-section p{
         font-size: 16px;
     }
-
 
     .wrapper{
         padding: 0 20px;

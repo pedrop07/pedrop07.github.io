@@ -1,10 +1,15 @@
 /* Global */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
 html,body {
 	background-color: #070707;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+    scroll-behavior: smooth;
+
 }
 
 hr{
@@ -240,8 +245,9 @@ img {
         font-size: 24px;
     }
 
-
-
+    .fs-24{
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 991px){
@@ -254,9 +260,9 @@ img {
         font-size: 22px;
     }
 
-
-
-
+    .fs-24{
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 767px){
@@ -273,7 +279,9 @@ img {
         font-size: 3em;
     }
 
-
+    .fs-24{
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 540px){
@@ -289,7 +297,6 @@ img {
     .infos-section p{
         font-size: 16px;
     }
-
 
     .wrapper{
         padding: 0 20px;
@@ -442,9 +449,9 @@ img {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    position: absolute;
-    top: 27%;
-    left: 85%;
+    /* position: absolute; */
+    /* top: 27%; */
+    /* left: 85%; */
 }
 
 .open-modal{
@@ -471,13 +478,26 @@ img {
 .modal-content {
     background-color: #171717;
     margin: 15% auto;
-    padding: 20px;
+    padding: 25px 30px;
     border: 1px solid rgb(52, 52, 52);
-    width: 80%;
+    width: 64%;
     display: flex;
     min-height: 300px;
 }
 
+.modal-content-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tecs-projeto{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    padding: 0px 4px;
+    background-color: #a74d55;
+    color: white;
+    font-weight: 700;
+}
 
 .close-modal {
     cursor: pointer;
@@ -485,11 +505,6 @@ img {
     position: absolute;
     left: 90%;
 }
-
-/* .close:hover,
-.close:focus {
-
-} */
 
 /* Sessão Tecnologias */
 
@@ -517,9 +532,20 @@ img {
 
 @media(max-width: 1199px){
 
+    .modal-content{
+        min-height: 60vh;
+    }
+
+    .modal-content-wrap{
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 991px){
+
+    .modal-content{
+        min-height: 70vh;
+    }
 
     .card-projeto{
         max-width: 320px;
@@ -541,8 +567,16 @@ img {
 
 /* Header */
 
+.header-fixed{
+    position: fixed;
+    background: #171717;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 5px 23px #ffffff2b;
+}
+
 .header{
-    padding-top: 20px;
+    transition: all .5s ease;
 }
 
 .navbar-toggler span.menu1 {
