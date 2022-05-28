@@ -192,6 +192,10 @@
     left: 90%;
 }
 
+.activeModal{
+    overflow: hidden;
+}
+
 /* Sessão Tecnologias */
 
 .s_tecnologias{
@@ -246,6 +250,9 @@
 
 @media(max-width: 540px){
 
+    .projeto-img{
+        display: none;
+    }
 }
 
 

@@ -176,6 +176,10 @@ img {
     font-size: 28px;
 }
 
+.fa-2x{
+    font-size: 1.5rem;
+}
+
 /* padrôes dos textos */
 
 .infos-section{
@@ -506,6 +510,10 @@ img {
     left: 90%;
 }
 
+.activeModal{
+    overflow: hidden;
+}
+
 /* Sessão Tecnologias */
 
 .s_tecnologias{
@@ -560,6 +568,9 @@ img {
 
 @media(max-width: 540px){
 
+    .projeto-img{
+        display: none;
+    }
 }
 
 
@@ -572,7 +583,7 @@ img {
     background: #171717;
     z-index: 999;
     width: 100%;
-    box-shadow: 0px 5px 23px #ffffff2b;
+    box-shadow: 0px 5px 23px #f9f9f917;
 }
 
 .header{

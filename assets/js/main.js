@@ -64,12 +64,21 @@ document.addEventListener("click", (e) => {
 
         let numberModal = ( idModal.split("").pop() ) - 1 ;
 
+        let body = document.querySelector("body");
+
+        body.classList.add("activeModal");
+
         modal[numberModal].style.display = "block";
+
+
 
         closeModal[numberModal].onclick = () => {
             modal[numberModal].style.display = "none";
 
+            body.classList.remove("activeModal");
         }
+
+        console.log(e.target)
     }
 });
 
