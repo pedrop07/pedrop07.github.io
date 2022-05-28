@@ -135,13 +135,19 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* position: absolute; */
-    /* top: 27%; */
-    /* left: 85%; */
 }
 
 .open-modal{
     cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 8px;
+    padding: 20px 0px;
+    background-color: #222121;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.open-modal:hover{
+    background-color: #312e2e;
 }
 
 .modal {
@@ -162,7 +168,7 @@
 }
 
 .modal-content {
-    background-color: #171717;
+    background-color: #121212;
     margin: 15% auto;
     padding: 25px 30px;
     border: 1px solid rgb(52, 52, 52);
@@ -233,6 +239,11 @@
 
 @media(max-width: 991px){
 
+    .center-img{
+        width: 40vh;
+        height: 40vh;
+    }
+
     .modal-content{
         min-height: 70vh;
     }
@@ -249,6 +260,15 @@
 }
 
 @media(max-width: 540px){
+
+    .center-img{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .modal-content{
+        min-height: 40vh;
+    }
 
     .projeto-img{
         display: none;

@@ -58,7 +58,6 @@ let closeModal = document.querySelectorAll(".close-modal");
 document.addEventListener("click", (e) => {
     let idModal = e.target.parentNode.getAttribute("id");
 
-    // console.log()
 
     if(idModal != ""){
 
@@ -70,15 +69,12 @@ document.addEventListener("click", (e) => {
 
         modal[numberModal].style.display = "block";
 
-
-
         closeModal[numberModal].onclick = () => {
+
             modal[numberModal].style.display = "none";
 
             body.classList.remove("activeModal");
         }
-
-        console.log(e.target)
     }
 });
 

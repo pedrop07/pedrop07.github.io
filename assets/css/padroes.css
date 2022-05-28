@@ -207,17 +207,21 @@ img {
     font-weight: 700;
 }
 
-#cookie-law-info-bar{
-    z-index: 999999999999999999999;
-    max-width: 1000px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-}
 
-.wpcf7-spinner{
-    position: absolute;
-}
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgb(4, 4, 4);        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(245, 243, 243);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
 
 /* Medias */
 

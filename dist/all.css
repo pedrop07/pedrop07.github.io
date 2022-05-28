@@ -207,17 +207,21 @@ img {
     font-weight: 700;
 }
 
-#cookie-law-info-bar{
-    z-index: 999999999999999999999;
-    max-width: 1000px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-}
 
-.wpcf7-spinner{
-    position: absolute;
-}
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgb(4, 4, 4);        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(245, 243, 243);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
 
 /* Medias */
 
@@ -453,13 +457,19 @@ img {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* position: absolute; */
-    /* top: 27%; */
-    /* left: 85%; */
 }
 
 .open-modal{
     cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 8px;
+    padding: 20px 0px;
+    background-color: #222121;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.open-modal:hover{
+    background-color: #312e2e;
 }
 
 .modal {
@@ -480,7 +490,7 @@ img {
 }
 
 .modal-content {
-    background-color: #171717;
+    background-color: #121212;
     margin: 15% auto;
     padding: 25px 30px;
     border: 1px solid rgb(52, 52, 52);
@@ -551,6 +561,11 @@ img {
 
 @media(max-width: 991px){
 
+    .center-img{
+        width: 40vh;
+        height: 40vh;
+    }
+
     .modal-content{
         min-height: 70vh;
     }
@@ -567,6 +582,15 @@ img {
 }
 
 @media(max-width: 540px){
+
+    .center-img{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .modal-content{
+        min-height: 40vh;
+    }
 
     .projeto-img{
         display: none;
