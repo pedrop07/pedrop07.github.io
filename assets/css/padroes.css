@@ -211,17 +211,17 @@ img {
 /* Scroll Bar */
 
 body::-webkit-scrollbar {
-    width: 6px;               /* width of the entire scrollbar */
+    width: 6px;
   }
 
-  body::-webkit-scrollbar-track {
-    background: rgb(4, 4, 4);        /* color of the tracking area */
-  }
+body::-webkit-scrollbar-track {
+background: rgb(4, 4, 4);
+}
 
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(245, 243, 243);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-  }
+body::-webkit-scrollbar-thumb {
+background-color: rgb(245, 243, 243);
+border-radius: 20px;
+}
 
 /* Medias */
 
@@ -238,9 +238,6 @@ body::-webkit-scrollbar {
     .infos-section p{
         font-size: 17px;
     }
-
-
-
 }
 
 @media(max-width: 1199px){
@@ -303,7 +300,7 @@ body::-webkit-scrollbar {
     }
 
     .infos-section p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .wrapper{

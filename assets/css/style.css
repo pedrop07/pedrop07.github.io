@@ -22,6 +22,11 @@
     color: var(--branco);
     width: 44px;
     min-height: 44px;
+    transition: all .25s ease;
+}
+
+.redes:hover, .redes:focus{
+    color: var(--vermelho);
 }
 
 .s_intro{
@@ -158,7 +163,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
@@ -169,7 +174,7 @@
 
 .modal-content {
     background-color: #121212;
-    margin: 15% auto;
+    margin: 11% auto;
     padding: 25px 30px;
     border: 1px solid rgb(52, 52, 52);
     width: 64%;
@@ -201,6 +206,11 @@
 .activeModal{
     overflow: hidden;
 }
+
+.activeModal ::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* Sessão Tecnologias */
 

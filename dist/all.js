@@ -90,15 +90,18 @@ jQuery(document).scroll(function () {
     if (jQuery(this).scrollTop() > 90) {
         jQuery('.header').addClass('header-fixed');
         jQuery('.wrapper').removeClass('py-4');
-        jQuery('.wrapper').addClass('py-3');
+        jQuery('.wrapper').addClass('py-2');
 
         header.style.paddingTop = "0px";
     }
     else {
         jQuery('.header').removeClass('header-fixed');
-        jQuery('.wrapper').removeClass('py-3');
+        jQuery('.wrapper').removeClass('py-2');
         jQuery('.wrapper').addClass('py-4');
         header.style.paddingTop = "20px";
     }
 });
 
+// AOS
+
+AOS.init();
