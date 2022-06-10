@@ -610,7 +610,9 @@ border-radius: 20px;
 /* Header */
 
 .header-fixed{
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
     background: #171717;
     z-index: 999;
     width: 100%;
