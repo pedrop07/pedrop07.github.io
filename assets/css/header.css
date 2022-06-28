@@ -1,20 +1,18 @@
 /* Header */
 
 .header-fixed{
-    /* position: fixed; */
-    position: sticky;
-    top: 0;
     background: #171717;
     z-index: 999;
     width: 100%;
-    /* box-shadow: 0px 5px 23px #f9f9f917; */
 }
 
 .header{
+    top: 0;
+    /* position: sticky; */
     transition: all .5s ease;
 }
 
-.navbar-toggler span.menu1 {
+/* .navbar-toggler span.menu1 {
     width: 20px;
     height: 2px;
     margin-bottom: 4px;
@@ -22,7 +20,7 @@
     border-radius: 50%;
     display: block;
     transition: all .7s ease-out;
-}
+} */
 
 /* Navbar */
 
